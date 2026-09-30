@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="AppPeek 隐私政策 / AppPeek Privacy Policy">
+  <title>隐私政策 · AppPeek</title>
+  <style>
+    :root { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang SC", "Hiragino Sans GB", sans-serif; color-scheme: light dark; --bg:#f5f6f8; --surface:#fff; --ink:#202634; --muted:#657084; --line:#e6e9ef; --blue:#3169dd; --blue-soft:#eaf0ff; --amber:#94600b; --amber-soft:#fff5dd; }
+    @media (prefers-color-scheme:dark) { :root { --bg:#11151d; --surface:#1a202b; --ink:#f0f3f8; --muted:#abb5c5; --line:#303847; --blue:#8caeff; --blue-soft:#253755; --amber:#ffd082; --amber-soft:#453822; } }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:var(--bg); color:var(--ink); line-height:1.7; }
+    a { color:var(--blue); text-decoration:none; }
+    a:hover { text-decoration:underline; }
+    button { font:inherit; }
+    .topbar { background:var(--surface); border-bottom:1px solid var(--line); }
+    .top-inner { max-width:1040px; margin:auto; padding:17px 28px; display:flex; align-items:center; justify-content:space-between; gap:20px; }
+    .brand { display:flex; align-items:center; gap:11px; color:var(--ink); font-weight:700; letter-spacing:-.02em; }
+    .mark { width:32px; height:32px; border-radius:10px; display:grid; place-items:center; background:linear-gradient(145deg,#5597ff,#344fd1); color:#fff; box-shadow:0 3px 10px #3057d044; }
+    .lang { border:1px solid var(--line); border-radius:10px; background:var(--surface); color:var(--ink); padding:5px 6px; display:flex; gap:2px; }
+    .lang button { border:0; border-radius:7px; padding:5px 11px; color:var(--muted); background:transparent; cursor:pointer; font-size:13px; }
+    .lang button[aria-pressed="true"] { background:var(--blue-soft); color:var(--blue); font-weight:700; }
+    .shell { max-width:1040px; margin:auto; padding:68px 28px 90px; display:grid; grid-template-columns:210px minmax(0,1fr); gap:68px; }
+    aside { position:sticky; top:26px; align-self:start; }
+    aside small { display:block; color:var(--muted); font-size:11px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; margin:5px 0 14px; }
+    aside a { display:block; padding:7px 12px; margin-left:-12px; color:var(--muted); border-radius:8px; font-size:14px; }
+    aside a:hover { background:var(--blue-soft); color:var(--blue); text-decoration:none; }
+    h1 { margin:14px 0 12px; font-size:clamp(37px,6vw,58px); line-height:1.15; letter-spacing:-.055em; }
+    .lead { color:var(--muted); font-size:17px; margin:0 0 28px; max-width:640px; }
+    .eyebrow { color:var(--blue); font-weight:700; font-size:12px; letter-spacing:.14em; text-transform:uppercase; }
+    .notice { background:var(--amber-soft); color:var(--amber); border-radius:13px; padding:15px 19px; font-size:14px; margin-bottom:26px; }
+    .meta { display:flex; flex-wrap:wrap; gap:10px 26px; color:var(--muted); font-size:13px; padding-bottom:32px; border-bottom:1px solid var(--line); }
+    section { scroll-margin-top:30px; padding:29px 0 30px; border-bottom:1px solid var(--line); }
+    section h2 { margin:0 0 10px; font-size:21px; letter-spacing:-.025em; }
+    section p { color:var(--muted); margin:0; max-width:660px; }
+    .placeholder { display:inline-block; background:var(--blue-soft); color:var(--blue); border-radius:5px; padding:0 5px; font-size:.9em; }
+    .contact { display:inline-block; margin-top:13px; font-size:14px; }
+    footer { color:var(--muted); font-size:12px; padding-top:30px; }
+    [lang="en"] { display:none; }
+    body.english [lang="zh-Hans"] { display:none; }
+    body.english [lang="en"] { display:revert; }
+    @media(max-width:700px) { .shell { display:block; padding:46px 22px 70px; } aside { position:static; display:none; } .top-inner { padding:15px 22px; } h1 { margin-top:10px; } }
+  </style>
+</head>
+<body>
+  <header class="topbar"><div class="top-inner">
+    <a class="brand" href="#top" aria-label="AppPeek"><span class="mark" aria-hidden="true">◈</span>AppPeek</a>
+    <div class="lang" role="group" aria-label="Language"><button type="button" id="zh" aria-pressed="true">中文</button><button type="button" id="en" aria-pressed="false">English</button></div>
+  </div></header>
+  <div class="shell" id="top">
+    <aside aria-label="Page navigation">
+      <small lang="zh-Hans">本页内容</small><small lang="en">On this page</small>
+      <a href="#overview"><span lang="zh-Hans">概述</span><span lang="en">Overview</span></a>
+      <a href="#access"><span lang="zh-Hans">访问的内容</span><span lang="en">App access</span></a>
+      <a href="#use"><span lang="zh-Hans">用途</span><span lang="en">How information is used</span></a>
+      <a href="#storage"><span lang="zh-Hans">存储与保留</span><span lang="en">Storage and retention</span></a>
+      <a href="#sharing"><span lang="zh-Hans">共享与第三方</span><span lang="en">Sharing and third parties</span></a>
+      <a href="#contact"><span lang="zh-Hans">联系与更新</span><span lang="en">Contact and changes</span></a>
+    </aside>
+    <main>
+      <div class="eyebrow">AppPeek · Privacy</div>
+      <h1 lang="zh-Hans">隐私政策</h1><h1 lang="en">Privacy Policy</h1>
+      <p class="lead" lang="zh-Hans">了解 AppPeek 如何处理您选择查看的应用程序信息。</p>
+      <p class="lead" lang="en">How AppPeek handles information about the apps you choose to inspect.</p>
+      <div class="notice" role="note" lang="zh-Hans"><strong>临时草稿。</strong>本页使用占位文本，尚不能作为正式隐私政策。发布正式版本前，请核实并替换所有占位内容。</div>
+      <div class="notice" role="note" lang="en"><strong>Temporary draft.</strong> This page contains placeholders and is not a final privacy policy. Verify and replace them before official publication.</div>
+      <div class="meta"><span lang="zh-Hans">生效日期：<span class="placeholder">[待填写]</span></span><span lang="en">Effective date: <span class="placeholder">[To be added]</span></span><span lang="zh-Hans">适用产品：AppPeek macOS 应用</span><span lang="en">Applies to: AppPeek for macOS</span></div>
+      <section id="overview"><h2 lang="zh-Hans">概述</h2><h2 lang="en">Overview</h2><p lang="zh-Hans"><span class="placeholder">[请填写开发者或运营主体名称]</span>提供 AppPeek。本政策将说明应用所处理的信息及您的选择。</p><p lang="en"><span class="placeholder">[Add developer or operator name]</span> provides AppPeek. This policy will explain the information handled by the app and your choices.</p></section>
+      <section id="access"><h2 lang="zh-Hans">访问的内容</h2><h2 lang="en">App access</h2><p lang="zh-Hans"><span class="placeholder">[请确认并描述用户授权的文件夹、应用包及快速查看扩展所访问的内容]</span></p><p lang="en"><span class="placeholder">[Confirm and describe user-selected folders, app bundles, and content accessed by the Quick Look extension]</span></p></section>
+      <section id="use"><h2 lang="zh-Hans">用途</h2><h2 lang="en">How information is used</h2><p lang="zh-Hans"><span class="placeholder">[请填写扫描、分析、对比及预览所需的信息处理方式]</span></p><p lang="en"><span class="placeholder">[Describe processing for scanning, inspection, comparison, and preview]</span></p></section>
+      <section id="storage"><h2 lang="zh-Hans">存储与保留</h2><h2 lang="en">Storage and retention</h2><p lang="zh-Hans"><span class="placeholder">[请填写本地保存的设置、文件夹授权信息及其保留和删除方式]</span></p><p lang="en"><span class="placeholder">[Describe locally stored settings, folder permissions, retention, and deletion]</span></p></section>
+      <section id="sharing"><h2 lang="zh-Hans">共享与第三方</h2><h2 lang="en">Sharing and third parties</h2><p lang="zh-Hans"><span class="placeholder">[请核实并填写网络传输、第三方服务及数据共享情况]</span></p><p lang="en"><span class="placeholder">[Verify and describe network transfers, third-party services, and data sharing]</span></p></section>
+      <section id="contact"><h2 lang="zh-Hans">联系与更新</h2><h2 lang="en">Contact and changes</h2><p lang="zh-Hans">如有隐私问题，请联系<span class="placeholder">[待填写联系邮箱]</span>。政策发生变化时，<span class="placeholder">[请填写通知方式]</span>。</p><p lang="en">For privacy questions, contact <span class="placeholder">[Add contact email]</span>. If this policy changes, <span class="placeholder">[Describe how changes will be announced]</span>.</p></section>
+      <footer>© 2026 AppPeek <span lang="zh-Hans">· 临时草稿</span><span lang="en">· Temporary draft</span></footer>
+    </main>
+  </div>
+  <script>
+    const buttons = { zh: document.getElementById('zh'), en: document.getElementById('en') };
+    function setLanguage(language) {
+      const english = language === 'en';
+      document.body.classList.toggle('english', english);
+      document.documentElement.lang = english ? 'en' : 'zh-Hans';
+      document.title = english ? 'Privacy Policy · AppPeek' : '隐私政策 · AppPeek';
+      buttons.zh.setAttribute('aria-pressed', String(!english));
+      buttons.en.setAttribute('aria-pressed', String(english));
+    }
+    buttons.zh.addEventListener('click', () => setLanguage('zh'));
+    buttons.en.addEventListener('click', () => setLanguage('en'));
+    if (!navigator.language.toLowerCase().startsWith('zh')) setLanguage('en');
+  </script>
+</body>
+</html>
