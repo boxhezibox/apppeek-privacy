@@ -1,94 +1,168 @@
 <!doctype html>
-<html lang="zh-Hans">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
-  <meta name="description" content="AppPeek 隐私政策 / AppPeek Privacy Policy">
-  <title>隐私政策 · AppPeek</title>
+  <meta name="description" content="AppPeek Privacy Policy">
+  <title>Privacy Policy · AppPeek</title>
   <style>
-    :root { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang SC", "Hiragino Sans GB", sans-serif; color-scheme: light dark; --bg:#f5f6f8; --surface:#fff; --ink:#202634; --muted:#657084; --line:#e6e9ef; --blue:#3169dd; --blue-soft:#eaf0ff; --amber:#94600b; --amber-soft:#fff5dd; }
-    @media (prefers-color-scheme:dark) { :root { --bg:#11151d; --surface:#1a202b; --ink:#f0f3f8; --muted:#abb5c5; --line:#303847; --blue:#8caeff; --blue-soft:#253755; --amber:#ffd082; --amber-soft:#453822; } }
+    :root { font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","PingFang SC","Hiragino Sans",sans-serif; color-scheme:light dark; --bg:#f5f6f8; --surface:#fff; --ink:#202634; --muted:#657084; --line:#e4e8ef; --blue:#2867dc; --blue-soft:#e9f0ff; }
+    @media (prefers-color-scheme:dark) { :root { --bg:#11151d; --surface:#1a202b; --ink:#f0f3f8; --muted:#adb7c7; --line:#303847; --blue:#8caeff; --blue-soft:#263955; } }
     * { box-sizing:border-box; }
     html { scroll-behavior:smooth; }
-    body { margin:0; background:var(--bg); color:var(--ink); line-height:1.7; }
+    body { margin:0; background:var(--bg); color:var(--ink); line-height:1.72; }
     a { color:var(--blue); text-decoration:none; }
     a:hover { text-decoration:underline; }
-    button { font:inherit; }
-    .topbar { background:var(--surface); border-bottom:1px solid var(--line); }
-    .top-inner { max-width:1040px; margin:auto; padding:17px 28px; display:flex; align-items:center; justify-content:space-between; gap:20px; }
-    .brand { display:flex; align-items:center; gap:11px; color:var(--ink); font-weight:700; letter-spacing:-.02em; }
-    .mark { width:32px; height:32px; border-radius:10px; display:grid; place-items:center; background:linear-gradient(145deg,#5597ff,#344fd1); color:#fff; box-shadow:0 3px 10px #3057d044; }
-    .lang { border:1px solid var(--line); border-radius:10px; background:var(--surface); color:var(--ink); padding:5px 6px; display:flex; gap:2px; }
-    .lang button { border:0; border-radius:7px; padding:5px 11px; color:var(--muted); background:transparent; cursor:pointer; font-size:13px; }
-    .lang button[aria-pressed="true"] { background:var(--blue-soft); color:var(--blue); font-weight:700; }
-    .shell { max-width:1040px; margin:auto; padding:68px 28px 90px; display:grid; grid-template-columns:210px minmax(0,1fr); gap:68px; }
-    aside { position:sticky; top:26px; align-self:start; }
+    .topbar { background:color-mix(in srgb,var(--surface) 88%,transparent); border-bottom:1px solid var(--line); position:sticky; top:0; z-index:2; backdrop-filter:blur(20px) saturate(150%); }
+    .top-inner { max-width:1060px; margin:auto; padding:14px 28px; display:flex; align-items:center; }
+    .brand { display:flex; align-items:center; gap:12px; color:var(--ink); font-weight:720; letter-spacing:-.02em; }
+    .brand img { width:38px; height:38px; border-radius:10px; box-shadow:0 4px 12px #183e8b2e; }
+    .shell { max-width:1060px; margin:auto; padding:66px 28px 88px; display:grid; grid-template-columns:214px minmax(0,1fr); gap:68px; }
+    aside { position:sticky; top:94px; align-self:start; }
     aside small { display:block; color:var(--muted); font-size:11px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; margin:5px 0 14px; }
     aside a { display:block; padding:7px 12px; margin-left:-12px; color:var(--muted); border-radius:8px; font-size:14px; }
     aside a:hover { background:var(--blue-soft); color:var(--blue); text-decoration:none; }
-    h1 { margin:14px 0 12px; font-size:clamp(37px,6vw,58px); line-height:1.15; letter-spacing:-.055em; }
-    .lead { color:var(--muted); font-size:17px; margin:0 0 28px; max-width:640px; }
-    .eyebrow { color:var(--blue); font-weight:700; font-size:12px; letter-spacing:.14em; text-transform:uppercase; }
-    .notice { background:var(--amber-soft); color:var(--amber); border-radius:13px; padding:15px 19px; font-size:14px; margin-bottom:26px; }
-    .meta { display:flex; flex-wrap:wrap; gap:10px 26px; color:var(--muted); font-size:13px; padding-bottom:32px; border-bottom:1px solid var(--line); }
-    section { scroll-margin-top:30px; padding:29px 0 30px; border-bottom:1px solid var(--line); }
+    .eyebrow { color:var(--blue); font-weight:720; font-size:12px; letter-spacing:.14em; text-transform:uppercase; }
+    h1 { margin:13px 0 12px; font-size:clamp(38px,6vw,58px); line-height:1.12; letter-spacing:-.052em; }
+    .lead { color:var(--muted); font-size:17px; margin:0 0 28px; max-width:690px; }
+    .meta { display:flex; flex-wrap:wrap; gap:10px 28px; color:var(--muted); font-size:13px; padding-bottom:32px; border-bottom:1px solid var(--line); }
+    section { scroll-margin-top:84px; padding:29px 0 30px; border-bottom:1px solid var(--line); }
     section h2 { margin:0 0 10px; font-size:21px; letter-spacing:-.025em; }
-    section p { color:var(--muted); margin:0; max-width:660px; }
-    .placeholder { display:inline-block; background:var(--blue-soft); color:var(--blue); border-radius:5px; padding:0 5px; font-size:.9em; }
-    .contact { display:inline-block; margin-top:13px; font-size:14px; }
+    section p { color:var(--muted); margin:0 0 12px; max-width:710px; }
+    section p:last-child { margin-bottom:0; }
+    .contact { display:inline-block; margin-top:4px; font-weight:650; }
     footer { color:var(--muted); font-size:12px; padding-top:30px; }
-    body [lang="en"] { display:none; }
-    body.english [lang="zh-Hans"] { display:none; }
-    body.english [lang="en"] { display:revert; }
-    @media(max-width:700px) { .shell { display:block; padding:46px 22px 70px; } aside { position:static; display:none; } .top-inner { padding:15px 22px; } h1 { margin-top:10px; } }
+    @media(max-width:720px) { .shell { display:block; padding:44px 22px 66px; } aside { display:none; } .top-inner { padding:12px 22px; } h1 { margin-top:9px; } }
   </style>
 </head>
 <body>
-  <header class="topbar"><div class="top-inner">
-    <a class="brand" href="#top" aria-label="AppPeek"><span class="mark" aria-hidden="true">◈</span>AppPeek</a>
-    <div class="lang" role="group" aria-label="Language"><button type="button" id="zh" aria-pressed="true">中文</button><button type="button" id="en" aria-pressed="false">English</button></div>
-  </div></header>
-  <div class="shell" id="top">
-    <aside aria-label="Page navigation">
-      <small lang="zh-Hans">本页内容</small><small lang="en">On this page</small>
-      <a href="#overview"><span lang="zh-Hans">概述</span><span lang="en">Overview</span></a>
-      <a href="#access"><span lang="zh-Hans">访问的内容</span><span lang="en">App access</span></a>
-      <a href="#use"><span lang="zh-Hans">用途</span><span lang="en">How information is used</span></a>
-      <a href="#storage"><span lang="zh-Hans">存储与保留</span><span lang="en">Storage and retention</span></a>
-      <a href="#sharing"><span lang="zh-Hans">共享与第三方</span><span lang="en">Sharing and third parties</span></a>
-      <a href="#contact"><span lang="zh-Hans">联系与更新</span><span lang="en">Contact and changes</span></a>
-    </aside>
-    <main>
-      <div class="eyebrow">AppPeek · Privacy</div>
-      <h1 lang="zh-Hans">隐私政策</h1><h1 lang="en">Privacy Policy</h1>
-      <p class="lead" lang="zh-Hans">了解 AppPeek 如何处理您选择查看的应用程序信息。</p>
-      <p class="lead" lang="en">How AppPeek handles information about the apps you choose to inspect.</p>
-      <div class="notice" role="note" lang="zh-Hans"><strong>临时草稿。</strong>本页使用占位文本，尚不能作为正式隐私政策。发布正式版本前，请核实并替换所有占位内容。</div>
-      <div class="notice" role="note" lang="en"><strong>Temporary draft.</strong> This page contains placeholders and is not a final privacy policy. Verify and replace them before official publication.</div>
-      <div class="meta"><span lang="zh-Hans">生效日期：<span class="placeholder">[待填写]</span></span><span lang="en">Effective date: <span class="placeholder">[To be added]</span></span><span lang="zh-Hans">适用产品：AppPeek macOS 应用</span><span lang="en">Applies to: AppPeek for macOS</span></div>
-      <section id="overview"><h2 lang="zh-Hans">概述</h2><h2 lang="en">Overview</h2><p lang="zh-Hans"><span class="placeholder">[请填写开发者或运营主体名称]</span>提供 AppPeek。本政策将说明应用所处理的信息及您的选择。</p><p lang="en"><span class="placeholder">[Add developer or operator name]</span> provides AppPeek. This policy will explain the information handled by the app and your choices.</p></section>
-      <section id="access"><h2 lang="zh-Hans">访问的内容</h2><h2 lang="en">App access</h2><p lang="zh-Hans"><span class="placeholder">[请确认并描述用户授权的文件夹、应用包及快速查看扩展所访问的内容]</span></p><p lang="en"><span class="placeholder">[Confirm and describe user-selected folders, app bundles, and content accessed by the Quick Look extension]</span></p></section>
-      <section id="use"><h2 lang="zh-Hans">用途</h2><h2 lang="en">How information is used</h2><p lang="zh-Hans"><span class="placeholder">[请填写扫描、分析、对比及预览所需的信息处理方式]</span></p><p lang="en"><span class="placeholder">[Describe processing for scanning, inspection, comparison, and preview]</span></p></section>
-      <section id="storage"><h2 lang="zh-Hans">存储与保留</h2><h2 lang="en">Storage and retention</h2><p lang="zh-Hans"><span class="placeholder">[请填写本地保存的设置、文件夹授权信息及其保留和删除方式]</span></p><p lang="en"><span class="placeholder">[Describe locally stored settings, folder permissions, retention, and deletion]</span></p></section>
-      <section id="sharing"><h2 lang="zh-Hans">共享与第三方</h2><h2 lang="en">Sharing and third parties</h2><p lang="zh-Hans"><span class="placeholder">[请核实并填写网络传输、第三方服务及数据共享情况]</span></p><p lang="en"><span class="placeholder">[Verify and describe network transfers, third-party services, and data sharing]</span></p></section>
-      <section id="contact"><h2 lang="zh-Hans">联系与更新</h2><h2 lang="en">Contact and changes</h2><p lang="zh-Hans">如有隐私问题，请联系<span class="placeholder">[待填写联系邮箱]</span>。政策发生变化时，<span class="placeholder">[请填写通知方式]</span>。</p><p lang="en">For privacy questions, contact <span class="placeholder">[Add contact email]</span>. If this policy changes, <span class="placeholder">[Describe how changes will be announced]</span>.</p></section>
-      <footer>© 2026 AppPeek <span lang="zh-Hans">· 临时草稿</span><span lang="en">· Temporary draft</span></footer>
-    </main>
-  </div>
+  <header class="topbar"><div class="top-inner"><a class="brand" href="#top" aria-label="AppPeek"><img alt="AppPeek" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAeGVYSWZNTQAqAAAACAAEARoABQAAAAEAAAA+ARsABQAAAAEAAABGASgAAwAAAAEAAgAAh2kABAAAAAEAAABOAAAAAAAAAJAAAAABAAAAkAAAAAEAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAYKADAAQAAAABAAAAYAAAAAB7vufvAAAACXBIWXMAABYlAAAWJQFJUiTwAAACnmlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iWE1QIENvcmUgNi4wLjAiPgogICA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPgogICAgICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIgogICAgICAgICAgICB4bWxuczp0aWZmPSJodHRwOi8vbnMuYWRvYmUuY29tL3RpZmYvMS4wLyIKICAgICAgICAgICAgeG1sbnM6ZXhpZj0iaHR0cDovL25zLmFkb2JlLmNvbS9leGlmLzEuMC8iPgogICAgICAgICA8dGlmZjpYUmVzb2x1dGlvbj4xNDQ8L3RpZmY6WFJlc29sdXRpb24+CiAgICAgICAgIDx0aWZmOllSZXNvbHV0aW9uPjE0NDwvdGlmZjpZUmVzb2x1dGlvbj4KICAgICAgICAgPHRpZmY6UmVzb2x1dGlvblVuaXQ+MjwvdGlmZjpSZXNvbHV0aW9uVW5pdD4KICAgICAgICAgPGV4aWY6UGl4ZWxZRGltZW5zaW9uPjEwMjQ8L2V4aWY6UGl4ZWxZRGltZW5zaW9uPgogICAgICAgICA8ZXhpZjpQaXhlbFhEaW1lbnNpb24+MTAyNDwvZXhpZjpQaXhlbFhEaW1lbnNpb24+CiAgICAgICAgIDxleGlmOkNvbG9yU3BhY2U+MTwvZXhpZjpDb2xvclNwYWNlPgogICAgICA8L3JkZjpEZXNjcmlwdGlvbj4KICAgPC9yZGY6UkRGPgo8L3g6eG1wbWV0YT4KOImb9AAACcJJREFUeAHtXW1sHMUZfmd3zz6f7XzakA+HRFGDrDqEgFGigFB/QEFRKoEEf5Baqag06o8mjYQQP/qjqFIrIaQqJfmBIlCKihCVWqmF0igFWlG+lED4sGMUtSiyEjcJSUOc5Ow7+3Z3+j7rXHo99vN293x7nldx7m52Znbmed75nnmHSIlCQCGgEFAIKAQUAgqBhYiAaEamh3fK3OXOL7RmvCupdyye+YZ97ICoJBWfVzyJE7Bp18QA5bStguQWactB/lxpC+oWUuhE0isdLebOqRbS0iRNSRJnhSZO8OdRqthHRvYNTCSZ2EQIGN75Ua7SM7BdSPv7kuS3hJ5bJhy8bZLSZtwBfFbAr8LL0AjB/7jg8p+UFkmr8hW7vC2F9ptcceLQsQN3xC4hsQnYvGdihy30nwpN24bE2tYsY82gt6Nw/jS9w1EqadsfaNL6xad7B16Pk9WGCbht17/6baPwNKvIoyQM1o6ZOOnIXFihd7KimSjdBzVz+slP9m240EgmGiJgaNfJW3Wj67ea0XGLXSnxe7NWvTQClVsYQVqui2xzdtQyS98b27f+Mzdffm6RCdi4e/xO3ej8vdD0lba5sLTeC0jN6ORa1zprmTMPH3923fte/tzcIxGw8SenN2m6fpgb2BUSdb2S6wgIp22wztmWdf/xX68Zuf4g4Evovvnw42f6NKG9rGk5Bb4LqFBIYAOMgJWLF1en0ASYlvmMlssP2WbZNSLlSNwWlLlNyA8Bq7B4hKqCbtlzejuz+7q0Tfa/UBvc8JAKzeBeamXH6N41h4JCBZaAoafGOhj1p3gwosAPQtN5zgrKWAEzYBcUJJAA/WLP/dzAbFlo/fwg4PyeAytgBuz8/OGZEeSBdPEDjHDjVjyYjYgbR2BaE/TAGoyZiIbFwYyx4whe84vE9xW3/fjCKssoj3GRWtLo9IIzDcQpKHTyjFynRjmmvFUrM4Bhs5bMmjwLV5ZUmp1TmYaIYKVlzCZ1Mz/0yf7+M14k+JYAS5/aJvTCkkarH2SmwC3IiqU6LerieRRfur2SOD/uFk9nXSnZdO6SRaWKjJ52ng/j6Yollpzaxjn4g1cufAngQriVR7w8z+MV3Nsd4C8uaLS2zyCDJ6LxG39ZEWj90m6NevKCxi+YdLUUnQQHO8aQ8+xJgH8jLMRgI1UPqh1o/tp+g/Rr4GcF+Np0QmEMXdC6/hx15XiNIKoCYVYYGPqIDwG8JEFihTOf7xOB2yNoz8plOhmoBqMm2i3CeXRD+nOsRKhGowqwA4aMgmfl60nA8E4ymPOeqAg62s8Nbm+e1wYyDn4VcOQDbVgXl+pICsWegSGwrMZV/+lJwNwartOU14fx/Q3M0dvJUoPrm6FrD3VGqpuVKppOwbfQ/NbDPZkJkygvPx1cX0KyUgKQ2jBdzY4U0Eo8SoBe4W4biip6EDluxFpZkN7SjE3T3OfXuNii3fKSMCR5hfVyT5SACg9geriufHBrge69tUA3LNadgZfXy+fbHaphMQFXpm36/PQsvTVSpvHzFerg1q9ZkhgBGD3evCpHv/zuMhpaEzgH1az8hXoPGtiB5Qbd/c0ueuWdIh3+dLppJTcRAjBqXLXUoH0/7KObeOCVVUEv59F7eqnCxeKtkVJTSoJPjRceRosr0t3fWZRp8Gtz+8jdPXTjEp3sJuyuiU0AtH/dDTm6b3OhNg+Z/t7LVdKdg3mnJKSdkdgEoLgOreGhOhffdpLB1R2Evn/aEvsV6G72LYo+TE87Y3HjX1TgLmkTutCxCUBG0+gfxwUwbvhqeWb9SlUSISDVFLZ55IqAeSY4M532GZ7eeO9EmRdGbNqyIU8rG5genmesXV+fCQKmZiQ9fvAi/W205MwxrV6u0/7H+mjj2myNuN0YyEQV9I+xEr3JI1N0dbG4/++LFh38+1W3/GTOLRMEYD22VjROdZGronaQTBBw12AnT3Po/7dVZMcd3e2Av/dSWSvlbjXPVD73o3566e2i0wjft7mLtt/eHlMfmWiEoQyY6v75I0tbSS8SSUsmqqBEctqikWSiBJy/bNHv3i1eXxA3eaPYXTxbufVmPiiXcckMAfsPXXEW+TFHM83jAuy2UwQ0SfuwxQVjACygVyfJWn2xPyw0qg0Ii1RK/hQBKQEbNlpFQFikUvKnCEgJ2LDRKgLCIpWSP0VASsCGjVYREBaplPwpAlICNmy0ioCwSKXkTxGQErBho1UEhEUqJX+KgAjAYhY2aVEEhEQUq9IlnoVNWhQBIRDF1ssyH2Ga4qNMSR8+VAQEEIDpb/x9yYtCZgobMTKxIBOAUWqPHfD5P4B/qZi89iPhmSEAB0GqCzL4HunAdAMUodrB+2Cs4/wVK7Ud4JkgACdwXtzdfx1GHB3CVpU0ZZZtsv7zbMU5vprmMYF0c5EQQtiOePv65i7Am3zyBw1v0o1uPSSqEa5HpOZ3Mw6eeBIA+/kw+fS/ZfCalNV9haa0m8xwFVRtcxrPG5pxac9h6R6LJwHHDhAfvRbFoNYHB9nGz3Nq20zGv6w4pstiZYuLEDAEll7xeBLAms9GbuQ5x36+V2h2x/aQ46dm6SQnuJ3kDd4OH7cKAnbAEFh6YeNDAAeR8gRbW/EK67gjkbCtduCv7bFfH5l65/Myvct/sW1GONZ+GEMf8UeX5BG2Cu4TfO5Rns3TvPrhFD3/ZvZJODFRoZ+9colw+h81eByZw04e8YvDtxuqW90fWKI8GcZspcH9tV+9Okmn2MDdY9/uzZzZAmx3/MvH0/Tsny/Tf65a8Y11sPaztclJYOhHQCDJm/ac+qNmdD0Q1mh3mQ/TLe/VaXh9B23gLeWwntWywrlHf//MVxZ9fHKGvuCBl86KlMQJec3IszHv0p9G9t70oF/+fUuAE9CSL0jdfsAvktpnqI5wkvGNz0ps9gW3a7S+QAux2Td2nV+TVcfYIWNX4+T6NZAAa3nxsD6pHWUjpKHtR2P02HnNbJnrW9vcEffLcPVzFNgFZTWwCkIEynx9EIy1z/miqyTN1yNqxw6+PfsiLqxR4o+AgxFjFebuAMQUuoU0dOMJu1IeQ+OixB0Bp+FljICVu4+vu4aqgqrB1CU+VSS+/pn6JT54JW4H4juzHuL5pbO4uknJHAIOFowJsIlygxJCh66CqmDjniyzUtrO1zWNajmc1Y1UiKrRtMknLnIr8PWN1igwiXqHGECITAAC4cY43SzeI83yQb5DEnby4bygBHlG3oEBsGjkFj0AFlt91WWe83SZZ626q+tsa9GI9j12Cah/nfeFzpQpy368GJKdC53rSaj/ra40r0dE/VYIKAQUAgoBhYBCQCGw0BH4LwYNbcgQFxaUAAAAAElFTkSuQmCC">AppPeek</a></div></header>
+  <div class="shell" id="top"><aside id="navigation"></aside><main id="policy"></main></div>
   <script>
-    const buttons = { zh: document.getElementById('zh'), en: document.getElementById('en') };
-    function setLanguage(language) {
-      const english = language === 'en';
-      document.body.classList.toggle('english', english);
-      document.documentElement.lang = english ? 'en' : 'zh-Hans';
-      document.title = english ? 'Privacy Policy · AppPeek' : '隐私政策 · AppPeek';
-      buttons.zh.setAttribute('aria-pressed', String(!english));
-      buttons.en.setAttribute('aria-pressed', String(english));
+    const policies = {
+      en: {
+        title:"Privacy Policy", lead:"How AppPeek handles information about the apps you choose to inspect.", nav:"On this page", date:"Effective date: October 1, 2026", product:"Applies to: AppPeek for macOS",
+        sections:[
+          ["overview","Overview",["AppPeek is a macOS utility for inspecting application bundles and comparing two applications that share the same Bundle ID. This policy explains what AppPeek reads, why it reads it, and what remains on your Mac.","AppPeek performs its analysis locally. It does not require an account and does not use advertising, tracking, or analytics services."]],
+          ["access","Information AppPeek reads",["When you select a folder or application, AppPeek may read application metadata, Info.plist values, executable headers and architectures, linked frameworks and library clues, code-signing information, entitlements, privacy manifests, localizations, Launch Services declarations, nested components, file listings, modification dates, icons, and package size.","The Quick Look extension reads the selected application bundle to create the preview you request. AppPeek does not read documents inside unrelated locations unless you select or authorize those locations."]],
+          ["use","How information is used",["The information is used only to display application details, search and filter the scanned library, compare two application bundles with the same Bundle ID, and generate Quick Look previews.","AppPeek does not use the inspected information to identify you, build a profile, serve advertising, or make automated decisions about you."]],
+          ["storage","Local storage and retention",["Scan, inspection, comparison, and preview results are processed on your device. AppPeek may store your appearance preference, other app settings, and a security-scoped bookmark for a folder you authorize so that access can be restored later.","macOS may cache Quick Look previews according to system behavior. You can clear AppPeek settings by removing the app's data, select another folder in Settings, and manage Quick Look extensions in System Settings."]],
+          ["network","Network access and third parties",["AppPeek does not upload application metadata, bundle contents, scan results, or comparison results to a server. It includes no third-party advertising or analytics SDK.","The app opens this privacy-policy page or your email client only when you choose the corresponding link. This page is hosted on GitHub Pages, so visiting it is subject to GitHub's handling of ordinary web request data."]],
+          ["control","Folder access and your choices",["AppPeek is sandboxed. It requests access when you choose an application folder or application bundle, explains what to select, and uses that access to inspect the selected content without modifying it.","You can stop using an authorized folder by choosing a different folder, removing AppPeek's saved data, or uninstalling AppPeek. You can enable or disable the Quick Look extension in System Settings."]],
+          ["children","Children's privacy",["AppPeek does not offer accounts or online social features and does not knowingly collect personal information from children."]],
+          ["contact","Changes and contact",["This policy may be updated when AppPeek's features or data practices change. The effective date above will be revised when a new version is published.","For privacy questions or feedback, contact:"]]
+        ], email:"heziboite@outlook.com"
+      },
+      "zh-Hans": {
+        title:"隐私协议", lead:"了解 AppPeek 如何处理您选择查看的应用程序信息。", nav:"本页内容", date:"生效日期：2026 年 10 月 1 日", product:"适用产品：AppPeek macOS 应用",
+        sections:[
+          ["overview","概述",["AppPeek 是一款用于检查应用程序包，并对比两个具有相同 Bundle ID 的应用程序的 macOS 工具。本协议说明 AppPeek 会读取哪些信息、读取这些信息的目的，以及哪些内容会保留在您的 Mac 上。","AppPeek 在本机完成分析。使用时无需账户，应用也不包含广告、跟踪或使用情况分析服务。"]],
+          ["access","AppPeek 读取的信息",["当您选择文件夹或应用程序时，AppPeek 可能读取应用程序元数据、Info.plist 值、可执行文件头与架构、链接的框架和程序库线索、代码签名信息、Entitlements、隐私清单、本地化资源、Launch Services 声明、嵌套组件、文件列表、修改时间、图标及安装包大小。","快速查看扩展会读取您选中的应用程序包，以生成您请求的预览。除非您主动选择或授权其他位置，否则 AppPeek 不会读取无关位置中的文稿。"]],
+          ["use","信息用途",["这些信息只用于展示应用程序详情、搜索和筛选已扫描的应用库、对比两个具有相同 Bundle ID 的应用程序包，以及生成快速查看预览。","AppPeek 不会利用检查到的信息识别您的身份、建立用户画像、投放广告或对您作出自动化决定。"]],
+          ["storage","本地存储与保留",["扫描、检查、对比和预览结果均在您的设备上处理。AppPeek 可能在本机保存外观偏好、其他应用设置，以及您所授权文件夹的安全范围书签，以便以后恢复访问。","macOS 可能根据系统行为缓存快速查看预览。您可以通过移除 AppPeek 的应用数据来清除设置，也可以在设置中选择其他文件夹，并在系统设置中管理快速查看扩展。"]],
+          ["network","网络访问与第三方",["AppPeek 不会向服务器上传应用程序元数据、包内容、扫描结果或对比结果，也不包含第三方广告或分析 SDK。","只有当您主动点击相应链接时，应用才会打开本隐私协议网页或您的邮件客户端。本网页托管于 GitHub Pages，因此访问网页时产生的常规网络请求数据由 GitHub 按其规则处理。"]],
+          ["control","文件夹访问与您的选择",["AppPeek 启用了 App Sandbox。您选择应用程序文件夹或应用程序包时，AppPeek 会请求访问权限并说明应选择的内容，随后仅使用该权限检查所选内容，不会修改其中的应用程序。","您可以改选其他文件夹、移除 AppPeek 保存的数据或卸载 AppPeek，以停止使用此前授权的文件夹；也可以在系统设置中启用或停用快速查看扩展。"]],
+          ["children","儿童隐私",["AppPeek 不提供账户或在线社交功能，也不会在知情的情况下收集儿童的个人信息。"]],
+          ["contact","变更与联系",["如果 AppPeek 的功能或信息处理方式发生变化，本协议可能会更新。发布新版本时，上方的生效日期也会相应修改。","如有隐私问题或反馈，请联系："]]
+        ], email:"heziboite@outlook.com"
+      },
+      ja: {
+        title:"プライバシーポリシー", lead:"AppPeekが、選択したアプリの情報をどのように取り扱うかを説明します。", nav:"このページの内容", date:"施行日：2026年10月1日", product:"対象製品：AppPeek for macOS",
+        sections:[
+          ["overview","概要",["AppPeekは、アプリケーションバンドルの確認と、同じBundle IDを持つ2つのアプリの比較を行うmacOSユーティリティです。本ポリシーでは、AppPeekが読み取る情報、その目的、Macに保存される内容について説明します。","分析はMac上で行われます。アカウントは不要で、広告、トラッキング、利用状況分析サービスは使用しません。"]],
+          ["access","読み取る情報",["フォルダまたはアプリを選択すると、アプリのメタデータ、Info.plist、実行ファイルのヘッダとアーキテクチャ、リンクされたフレームワークとライブラリの手掛かり、コード署名、Entitlements、プライバシーマニフェスト、ローカライズ、Launch Services宣言、内包コンポーネント、ファイル一覧、更新日時、アイコン、パッケージサイズを読み取る場合があります。","Quick Look拡張機能は、要求されたプレビューを作成するため、選択したアプリケーションバンドルを読み取ります。ユーザーが選択または許可していない場所の書類は読み取りません。"]],
+          ["use","利用目的",["情報は、アプリの詳細表示、スキャン済みライブラリの検索と絞り込み、同じBundle IDを持つ2つのアプリの比較、Quick Lookプレビューの生成にのみ使用します。","本人の識別、プロファイリング、広告配信、自動化された判断には使用しません。"]],
+          ["storage","ローカル保存と保持",["スキャン、確認、比較、プレビューの結果は端末上で処理されます。外観設定などのアプリ設定と、許可したフォルダへのアクセスを復元するためのセキュリティスコープ付きブックマークをMacに保存する場合があります。","macOSはシステムの動作に従いQuick Lookプレビューをキャッシュすることがあります。アプリデータの削除、設定でのフォルダ変更、システム設定での拡張機能管理が可能です。"]],
+          ["network","通信と第三者",["アプリのメタデータ、バンドル内容、スキャン結果、比較結果をサーバーへ送信しません。第三者の広告SDKや分析SDKも含みません。","該当するリンクを選んだ場合に限り、本ページまたはメールアプリを開きます。本ページはGitHub Pagesでホストされているため、閲覧時の通常のWebリクエストデータはGitHubの取り扱いに従います。"]],
+          ["control","フォルダへのアクセスと選択",["AppPeekはApp Sandboxを使用します。フォルダまたはアプリを選ぶとアクセス許可を求め、選択内容を変更せずに確認します。","別のフォルダの選択、AppPeekの保存データの削除、アンインストールにより、以前許可したフォルダの使用を停止できます。Quick Look拡張機能はシステム設定で管理できます。"]],
+          ["children","子どものプライバシー",["AppPeekはアカウントやオンラインのソーシャル機能を提供せず、子どもの個人情報を意図的に収集しません。"]],
+          ["contact","変更とお問い合わせ",["機能または情報の取り扱いが変わった場合、本ポリシーを更新することがあります。更新時には施行日を変更します。","プライバシーに関するご質問やフィードバック："]]
+        ], email:"heziboite@outlook.com"
+      },
+      ko: {
+        title:"개인정보 처리방침", lead:"AppPeek이 사용자가 확인하도록 선택한 앱 정보를 처리하는 방법을 안내합니다.", nav:"페이지 내용", date:"시행일: 2026년 10월 1일", product:"적용 제품: macOS용 AppPeek",
+        sections:[
+          ["overview","개요",["AppPeek은 애플리케이션 번들을 검사하고 동일한 Bundle ID를 가진 두 앱을 비교하는 macOS 유틸리티입니다. 이 방침은 AppPeek이 읽는 정보, 사용 목적 및 Mac에 남는 내용을 설명합니다.","분석은 기기에서 수행됩니다. 계정이 필요하지 않으며 광고, 추적 또는 사용 분석 서비스를 이용하지 않습니다."]],
+          ["access","읽는 정보",["폴더나 앱을 선택하면 앱 메타데이터, Info.plist 값, 실행 파일 헤더와 아키텍처, 연결된 프레임워크와 라이브러리 단서, 코드 서명, Entitlements, 개인정보 보호 매니페스트, 현지화 리소스, Launch Services 선언, 내장 구성요소, 파일 목록, 수정일, 아이콘 및 패키지 크기를 읽을 수 있습니다.","훑어보기 확장 프로그램은 요청한 미리보기를 만들기 위해 선택한 앱 번들을 읽습니다. 사용자가 선택하거나 허용하지 않은 위치의 문서는 읽지 않습니다."]],
+          ["use","이용 목적",["정보는 앱 세부 정보 표시, 스캔한 라이브러리 검색과 필터링, 동일한 Bundle ID를 가진 두 앱 비교 및 훑어보기 미리보기 생성에만 사용됩니다.","신원 확인, 프로파일 작성, 광고 또는 자동화된 의사 결정에 사용하지 않습니다."]],
+          ["storage","로컬 저장 및 보관",["스캔, 검사, 비교 및 미리보기 결과는 기기에서 처리됩니다. 테마 등 앱 설정과 허용한 폴더의 접근을 복원하기 위한 보안 범위 책갈피를 Mac에 저장할 수 있습니다.","macOS는 시스템 동작에 따라 훑어보기 미리보기를 캐시할 수 있습니다. 앱 데이터 삭제, 설정에서 폴더 변경, 시스템 설정에서 확장 프로그램 관리가 가능합니다."]],
+          ["network","네트워크 및 제3자",["앱 메타데이터, 번들 내용, 스캔 결과 또는 비교 결과를 서버에 업로드하지 않으며 제3자 광고나 분석 SDK를 포함하지 않습니다.","사용자가 해당 링크를 선택한 경우에만 이 페이지나 이메일 앱을 엽니다. 이 페이지는 GitHub Pages에서 호스팅되므로 방문 시 일반 웹 요청 데이터는 GitHub의 처리 방식이 적용됩니다."]],
+          ["control","폴더 접근 및 선택권",["AppPeek은 App Sandbox를 사용합니다. 폴더나 앱을 선택하면 접근 권한을 요청하고 선택한 내용을 수정하지 않은 채 검사합니다.","다른 폴더 선택, AppPeek 저장 데이터 삭제 또는 앱 제거로 이전에 허용한 폴더 사용을 중단할 수 있습니다. 훑어보기 확장 프로그램은 시스템 설정에서 관리할 수 있습니다."]],
+          ["children","아동의 개인정보",["AppPeek은 계정이나 온라인 소셜 기능을 제공하지 않으며 아동의 개인정보를 고의로 수집하지 않습니다."]],
+          ["contact","변경 및 문의",["기능이나 정보 처리 방식이 변경되면 이 방침을 업데이트할 수 있으며 시행일도 함께 변경합니다.","개인정보 관련 문의 또는 의견: "]]
+        ], email:"heziboite@outlook.com"
+      },
+      fr: {
+        title:"Politique de confidentialité", lead:"Comment AppPeek traite les informations des apps que vous choisissez d’inspecter.", nav:"Dans cette page", date:"Date d’entrée en vigueur : 1er octobre 2026", product:"Produit concerné : AppPeek pour macOS",
+        sections:[
+          ["overview","Présentation",["AppPeek est un utilitaire macOS qui inspecte les paquets d’applications et compare deux apps ayant le même Bundle ID. Cette politique explique les informations lues, leur utilisation et ce qui reste sur votre Mac.","L’analyse s’effectue localement. Aucun compte n’est requis et aucun service de publicité, de suivi ou d’analyse d’utilisation n’est employé."]],
+          ["access","Informations lues",["Lorsque vous choisissez un dossier ou une app, AppPeek peut lire les métadonnées, les valeurs Info.plist, les en-têtes et architectures des exécutables, les frameworks liés et indices de bibliothèques, la signature du code, les Entitlements, les manifestes de confidentialité, les localisations, les déclarations Launch Services, les composants intégrés, les listes de fichiers, les dates de modification, les icônes et la taille du paquet.","L’extension Coup d’œil lit le paquet sélectionné afin de créer l’aperçu demandé. AppPeek ne lit pas les documents d’autres emplacements sans votre sélection ou autorisation."]],
+          ["use","Utilisation des informations",["Ces informations servent uniquement à afficher les détails, rechercher et filtrer la bibliothèque analysée, comparer deux apps ayant le même Bundle ID et générer des aperçus Coup d’œil.","Elles ne servent pas à vous identifier, établir un profil, afficher de la publicité ou prendre une décision automatisée vous concernant."]],
+          ["storage","Stockage local et conservation",["Les résultats d’analyse, d’inspection, de comparaison et d’aperçu sont traités sur votre appareil. AppPeek peut enregistrer localement vos préférences et un signet à portée de sécurité pour rétablir l’accès à un dossier autorisé.","macOS peut mettre en cache les aperçus Coup d’œil. Vous pouvez supprimer les données d’AppPeek, choisir un autre dossier dans Réglages et gérer l’extension dans Réglages Système."]],
+          ["network","Réseau et tiers",["AppPeek ne transmet à aucun serveur les métadonnées, contenus, résultats d’analyse ou de comparaison. Aucun SDK publicitaire ou analytique tiers n’est intégré.","L’app n’ouvre cette page ou votre logiciel de messagerie que lorsque vous choisissez le lien correspondant. Cette page est hébergée par GitHub Pages ; les requêtes Web ordinaires relèvent donc du traitement de GitHub."]],
+          ["control","Accès aux dossiers et choix",["AppPeek utilise l’App Sandbox. Il demande votre autorisation lorsque vous choisissez un dossier ou une app, puis inspecte le contenu sans le modifier.","Vous pouvez choisir un autre dossier, supprimer les données enregistrées ou désinstaller AppPeek. L’extension Coup d’œil peut être gérée dans Réglages Système."]],
+          ["children","Confidentialité des enfants",["AppPeek ne propose ni compte ni fonctions sociales en ligne et ne collecte pas sciemment les données personnelles d’enfants."]],
+          ["contact","Modifications et contact",["Cette politique peut évoluer avec les fonctions ou pratiques de traitement d’AppPeek. Sa date d’entrée en vigueur sera alors actualisée.","Pour toute question ou remarque :"]]
+        ], email:"heziboite@outlook.com"
+      },
+      de: {
+        title:"Datenschutzerklärung", lead:"Wie AppPeek Informationen über die von Ihnen geprüften Apps verarbeitet.", nav:"Auf dieser Seite", date:"Gültig ab: 1. Oktober 2026", product:"Gilt für: AppPeek für macOS",
+        sections:[
+          ["overview","Überblick",["AppPeek ist ein macOS-Dienstprogramm zum Prüfen von App-Paketen und zum Vergleichen zweier Apps mit derselben Bundle ID. Diese Erklärung beschreibt, welche Informationen gelesen werden, wozu sie dienen und was auf Ihrem Mac verbleibt.","Die Analyse erfolgt lokal. Es ist kein Konto erforderlich; Werbung, Tracking und Nutzungsanalysen werden nicht eingesetzt."]],
+          ["access","Gelesene Informationen",["Wenn Sie einen Ordner oder eine App wählen, kann AppPeek Metadaten, Info.plist-Werte, Header und Architekturen ausführbarer Dateien, verknüpfte Frameworks und Bibliothekshinweise, Codesignatur, Entitlements, Datenschutzmanifeste, Lokalisierungen, Launch-Services-Deklarationen, eingebettete Komponenten, Dateilisten, Änderungsdaten, Symbole und Paketgröße lesen.","Die Übersicht-Erweiterung liest das ausgewählte App-Paket, um die angeforderte Vorschau zu erstellen. Dokumente an anderen Orten werden ohne Ihre Auswahl oder Freigabe nicht gelesen."]],
+          ["use","Verwendungszweck",["Die Informationen dienen nur zur Anzeige von App-Details, zum Suchen und Filtern der gescannten Bibliothek, zum Vergleich zweier Apps mit derselben Bundle ID und zum Erstellen von Übersicht-Vorschauen.","Sie werden nicht zur Identifizierung, Profilbildung, Werbung oder für automatisierte Entscheidungen verwendet."]],
+          ["storage","Lokale Speicherung",["Scan-, Prüf-, Vergleichs- und Vorschauergebnisse werden auf Ihrem Gerät verarbeitet. AppPeek kann Einstellungen und ein sicherheitsbezogenes Lesezeichen speichern, um den Zugriff auf einen freigegebenen Ordner wiederherzustellen.","macOS kann Übersicht-Vorschauen systembedingt zwischenspeichern. Sie können AppPeek-Daten löschen, in den Einstellungen einen anderen Ordner wählen und die Erweiterung in den Systemeinstellungen verwalten."]],
+          ["network","Netzwerk und Dritte",["AppPeek lädt keine Metadaten, Paketinhalte, Scan- oder Vergleichsergebnisse auf einen Server hoch und enthält keine Werbe- oder Analyse-SDKs Dritter.","Diese Seite oder Ihr E-Mail-Programm wird nur geöffnet, wenn Sie den jeweiligen Link wählen. Die Seite wird über GitHub Pages bereitgestellt; gewöhnliche Webanfragedaten werden daher gemäß den Verfahren von GitHub verarbeitet."]],
+          ["control","Ordnerzugriff und Auswahl",["AppPeek verwendet die App Sandbox. Beim Auswählen eines Ordners oder einer App wird Ihre Freigabe angefordert; der Inhalt wird geprüft, aber nicht verändert.","Sie können einen anderen Ordner wählen, gespeicherte AppPeek-Daten löschen oder AppPeek deinstallieren. Die Übersicht-Erweiterung lässt sich in den Systemeinstellungen verwalten."]],
+          ["children","Datenschutz für Kinder",["AppPeek bietet weder Konten noch soziale Online-Funktionen und erhebt wissentlich keine personenbezogenen Daten von Kindern."]],
+          ["contact","Änderungen und Kontakt",["Diese Erklärung kann bei Änderungen an Funktionen oder Datenverarbeitung aktualisiert werden. Das Gültigkeitsdatum wird entsprechend angepasst.","Fragen oder Feedback zum Datenschutz: "]]
+        ], email:"heziboite@outlook.com"
+      },
+      es: {
+        title:"Política de privacidad", lead:"Cómo trata AppPeek la información de las apps que decides inspeccionar.", nav:"En esta página", date:"Fecha de entrada en vigor: 1 de octubre de 2026", product:"Producto: AppPeek para macOS",
+        sections:[
+          ["overview","Resumen",["AppPeek es una utilidad de macOS para inspeccionar paquetes de aplicaciones y comparar dos apps con el mismo Bundle ID. Esta política explica qué información lee, para qué se utiliza y qué permanece en tu Mac.","El análisis se realiza de forma local. No requiere una cuenta ni utiliza publicidad, seguimiento o servicios de análisis de uso."]],
+          ["access","Información que se lee",["Al elegir una carpeta o app, AppPeek puede leer metadatos, valores de Info.plist, cabeceras y arquitecturas de ejecutables, frameworks enlazados e indicios de bibliotecas, firma de código, Entitlements, manifiestos de privacidad, localizaciones, declaraciones de Launch Services, componentes integrados, listas de archivos, fechas de modificación, iconos y tamaño del paquete.","La extensión Vista rápida lee el paquete seleccionado para crear la previsualización solicitada. No lee documentos de otras ubicaciones sin tu selección o autorización."]],
+          ["use","Uso de la información",["La información solo se usa para mostrar detalles, buscar y filtrar la biblioteca analizada, comparar dos apps con el mismo Bundle ID y generar previsualizaciones de Vista rápida.","No se utiliza para identificarte, crear perfiles, mostrar publicidad ni tomar decisiones automatizadas sobre ti."]],
+          ["storage","Almacenamiento local",["Los resultados de análisis, inspección, comparación y previsualización se procesan en tu dispositivo. AppPeek puede guardar preferencias y un marcador con ámbito de seguridad para restaurar el acceso a una carpeta autorizada.","macOS puede almacenar en caché las previsualizaciones. Puedes eliminar los datos de AppPeek, elegir otra carpeta en Ajustes y gestionar la extensión en Ajustes del Sistema."]],
+          ["network","Red y terceros",["AppPeek no envía a servidores metadatos, contenido de paquetes ni resultados, y no incluye SDK de publicidad o análisis de terceros.","La app solo abre esta página o tu cliente de correo cuando eliges el enlace correspondiente. La página está alojada en GitHub Pages, por lo que los datos ordinarios de solicitudes web están sujetos al tratamiento de GitHub."]],
+          ["control","Acceso a carpetas y opciones",["AppPeek utiliza App Sandbox. Solicita acceso al elegir una carpeta o app y la inspecciona sin modificarla.","Puedes elegir otra carpeta, eliminar los datos guardados o desinstalar AppPeek. La extensión Vista rápida se gestiona en Ajustes del Sistema."]],
+          ["children","Privacidad infantil",["AppPeek no ofrece cuentas ni funciones sociales en línea y no recopila conscientemente información personal de menores."]],
+          ["contact","Cambios y contacto",["Esta política puede actualizarse si cambian las funciones o el tratamiento de información. La fecha de entrada en vigor se actualizará en consecuencia.","Para preguntas o comentarios sobre privacidad: "]]
+        ], email:"heziboite@outlook.com"
+      },
+      it: {
+        title:"Informativa sulla privacy", lead:"Come AppPeek tratta le informazioni delle app che scegli di esaminare.", nav:"In questa pagina", date:"Data di efficacia: 1 ottobre 2026", product:"Prodotto: AppPeek per macOS",
+        sections:[
+          ["overview","Panoramica",["AppPeek è un’utility macOS che esamina i pacchetti delle applicazioni e confronta due app con lo stesso Bundle ID. Questa informativa descrive quali informazioni vengono lette, per quali finalità e cosa rimane sul Mac.","L’analisi avviene localmente. Non è richiesto un account e non vengono usati servizi pubblicitari, di tracciamento o di analisi dell’utilizzo."]],
+          ["access","Informazioni lette",["Quando scegli una cartella o un’app, AppPeek può leggere metadati, valori Info.plist, intestazioni e architetture degli eseguibili, framework collegati e indizi sulle librerie, firma del codice, Entitlements, manifesti sulla privacy, localizzazioni, dichiarazioni Launch Services, componenti incorporati, elenchi di file, date di modifica, icone e dimensione del pacchetto.","L’estensione Visualizzazione rapida legge il pacchetto selezionato per creare l’anteprima richiesta. Non legge documenti in altre posizioni senza la tua selezione o autorizzazione."]],
+          ["use","Uso delle informazioni",["Le informazioni servono solo a mostrare i dettagli, cercare e filtrare la libreria analizzata, confrontare due app con lo stesso Bundle ID e generare anteprime di Visualizzazione rapida.","Non vengono usate per identificarti, creare profili, mostrare pubblicità o prendere decisioni automatizzate su di te."]],
+          ["storage","Archiviazione locale",["I risultati di scansione, ispezione, confronto e anteprima vengono elaborati sul dispositivo. AppPeek può salvare preferenze e un segnalibro con ambito di sicurezza per ripristinare l’accesso a una cartella autorizzata.","macOS può memorizzare nella cache le anteprime. Puoi eliminare i dati di AppPeek, scegliere un’altra cartella nelle Impostazioni e gestire l’estensione nelle Impostazioni di Sistema."]],
+          ["network","Rete e terze parti",["AppPeek non carica su server metadati, contenuti dei pacchetti o risultati e non include SDK pubblicitari o analitici di terze parti.","L’app apre questa pagina o il client email solo quando scegli il relativo link. La pagina è ospitata su GitHub Pages; i normali dati delle richieste web sono quindi soggetti al trattamento di GitHub."]],
+          ["control","Accesso alle cartelle e scelte",["AppPeek usa App Sandbox. Richiede l’accesso quando scegli una cartella o un’app e ne esamina il contenuto senza modificarlo.","Puoi scegliere un’altra cartella, eliminare i dati salvati o disinstallare AppPeek. L’estensione Visualizzazione rapida può essere gestita nelle Impostazioni di Sistema."]],
+          ["children","Privacy dei minori",["AppPeek non offre account o funzioni social online e non raccoglie consapevolmente dati personali di minori."]],
+          ["contact","Modifiche e contatti",["L’informativa può essere aggiornata se cambiano le funzioni o il trattamento delle informazioni. La data di efficacia verrà aggiornata di conseguenza.","Per domande o commenti sulla privacy: "]]
+        ], email:"heziboite@outlook.com"
+      }
+    };
+    function preferredLocale() {
+      for (const language of (navigator.languages || [navigator.language])) {
+        const tag = language.toLowerCase();
+        if (tag === "zh-hans" || tag.startsWith("zh-hans-") || tag === "zh-cn" || tag === "zh-sg") return "zh-Hans";
+        const base = tag.split("-")[0];
+        if (["en","ja","ko","fr","de","es","it"].includes(base)) return base;
+      }
+      return "en";
     }
-    buttons.zh.addEventListener('click', () => setLanguage('zh'));
-    buttons.en.addEventListener('click', () => setLanguage('en'));
-    if (!navigator.language.toLowerCase().startsWith('zh')) setLanguage('en');
+    const locale = preferredLocale();
+    const policy = policies[locale] || policies.en;
+    document.documentElement.lang = locale;
+    document.title = `${policy.title} · AppPeek`;
+    const navigation = document.getElementById("navigation");
+    navigation.innerHTML = `<small>${policy.nav}</small>${policy.sections.map(([id,title]) => `<a href="#${id}">${title}</a>`).join("")}`;
+    const sections = policy.sections.map(([id,title,paragraphs]) => `<section id="${id}"><h2>${title}</h2>${paragraphs.map(text => `<p>${text}</p>`).join("")}${id === "contact" ? `<a class="contact" href="mailto:${policy.email}">${policy.email}</a>` : ""}</section>`).join("");
+    document.getElementById("policy").innerHTML = `<div class="eyebrow">AppPeek · Privacy</div><h1>${policy.title}</h1><p class="lead">${policy.lead}</p><div class="meta"><span>${policy.date}</span><span>${policy.product}</span></div>${sections}<footer>© 2026 AppPeek</footer>`;
   </script>
 </body>
 </html>
